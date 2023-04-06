@@ -45,3 +45,8 @@ You can perform real-time predictions on your webcam feed using the notebook `Re
 On the top left you see a history of the last 5 detected words (a word is only added to the history, if it differs from the preceding word). 
 
 Beneath the history, real-time barplots can be seen, that represent the prediction confidence for a corresponding word. 
+
+
+### __Further Notes__
+
+Pressing "Q" interrupts the webcam feed, but does not close the window properly on Mac. To close the window you need to restart the kernel. 
