@@ -1,0 +1,3 @@
+[submodule "app/mediapipe-android"]
+	path = app/mediapipe-android
+	url = https://github.com/Jin-HoMichaelLee/mediapipe-android
