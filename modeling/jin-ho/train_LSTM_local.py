@@ -62,7 +62,7 @@ print(y_train.shape)
 RSEED = 24
 
 # name for saving the trained model
-model_name = 'LSTM_model_1'
+model_name = 'LSTM_model_2_1'
 
 # setup sequential model
 model = Sequential()
@@ -79,7 +79,7 @@ model.compile(optimizer='Adam', loss='categorical_crossentropy', metrics=['categ
 
 # show summary of model
 model.summary()
-training_history = model.fit(X_train, y_train, validation_split=0.2 ,epochs=100, verbose=1)
+training_history = model.fit(X_train, y_train, validation_split=0.2 ,epochs=1, verbose=1)
 
 #Generating and saving plots
 print('Generating and saving metric/loss plots.')
@@ -95,7 +95,7 @@ y_pred = np.argmax(y_pred, axis=1)
 print(f'Accuracy score on test dataset is: {round(accuracy_score(y_test, y_pred),3)}.')
 
 #save model
-print(f'Saving model in ../models/{model_name}')
-model.save('../models/'+model_name)
+print(f'Saving model in models/{model_name}')
+model.save('models/'+model_name)
 
 print('Done.')
