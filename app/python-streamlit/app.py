@@ -8,7 +8,7 @@ import time
 
 # developer modules
 from functions import draw_styled_landmarks, real_time_prediction
-from params import LENGTH, SELECTED_SIGNS, TRANSITION_FRAMES, SELECTED_LABELS, MODEL
+from params import LENGTH, SELECTED_SIGNS, TRANSITION_FRAMES, SELECTED_LABELS, MODEL, THRESHOLD
 
 
 # ------------------------------
